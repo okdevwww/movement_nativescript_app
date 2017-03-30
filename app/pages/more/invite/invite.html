@@ -1,0 +1,10 @@
+<StackLayout>
+  <ActionBar title="Invite Others">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+  </ActionBar>
+
+  <TextField hint="Name"></TextField>
+  <TextField hint="Email Address" keyboardType="email"
+    autocorrect="false" autocapitalizationType="none"></TextField>
+  <Button text="Send Invite" [nsRouterLink]="['/more/invite/complete']" pageTransition="slideLeft"></Button>
+</StackLayout>

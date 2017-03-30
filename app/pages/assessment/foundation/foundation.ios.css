@@ -1,0 +1,9 @@
+StackLayout {
+  margin: 10;
+}
+Button {
+  height: 50;
+}
+Image{
+  width:200;
+}

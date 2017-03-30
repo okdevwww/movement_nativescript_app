@@ -1,0 +1,7 @@
+<StackLayout (swipe)="onSwipe($event)">
+  <Image src="res://logo" stretch="aspectFit" horizontalAlignment="center"></Image>
+  <TextView editable="false" text="{{photoUrl}}"></TextView>
+  <TextView editable="false" text="{{displayText}}"></TextView>
+  <Button text="Sign Up" [nsRouterLink]="['/register']"></Button>
+  <Button text="Log In" [nsRouterLink]="['/login']"></Button>
+</StackLayout>

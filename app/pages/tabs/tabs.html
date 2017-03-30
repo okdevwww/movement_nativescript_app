@@ -1,0 +1,14 @@
+<TabView #tabview [selectedIndex]="tabindex" sdkExampleTitle sdkToggleNavButton>
+    <StackLayout *tabItem="{title: 'Dashboard'}">
+        <dashboard></dashboard>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Moves'}">
+        <moves></moves>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Workout'}">
+        <calendar></calendar>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'More'}">
+        <more></more>
+    </StackLayout>
+</TabView>

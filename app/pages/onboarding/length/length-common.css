@@ -1,0 +1,28 @@
+StackLayout {
+  margin-left: 30;
+  margin-right: 30;
+  padding-bottom: 15;
+  background-color: white;
+}
+Image {
+  margin-top: 15;
+  margin-bottom: 20;
+}
+Button, TextField, Label {
+  margin-left: 16;
+  margin-right: 16;
+  margin-bottom: 10;
+}
+.choice-button {
+  background-color: #215A8B;
+  color: white;
+  margin-top: 20;
+  padding-top: 40;
+  padding-bottom: 40;
+}
+
+TextView{
+  margin-right: 10;
+  margin-left: 10;
+  margin-top: 10;
+}

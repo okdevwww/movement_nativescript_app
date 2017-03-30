@@ -1,0 +1,12 @@
+StackLayout {
+  height: 425;
+}
+Button {
+  height: 30;
+}
+Button.submit-button {
+  height: 40;
+}
+Image{
+  width:200;
+}

@@ -1,0 +1,31 @@
+
+        <ScrollView>
+          <StackLayout rows="auto, *">
+              <ActionBar title="Dashboard">
+                <NavigationButton text="Logout" android.systemIcon="ic_menu_back"
+                (tap)="onNavBtnTap()"></NavigationButton>
+              </ActionBar>
+
+              <GridLayout [nsRouterLink]="['/assessment/progression']" row="0" columns="*, auto" class="notice-bar">
+                <TextField editable="false" text="Assessment (for those who haven't finished it.)" col="0"></TextField>
+                <Image src="res://add" col="1"></Image>
+              </GridLayout>
+
+              <GridLayout row="1" columns="*, auto" class="add-bar">
+                <TextField editable="false" text="Progress" row="0" col="0"></TextField>
+                <Image src="res://add" col="1"></Image>
+              </GridLayout>
+
+              <GridLayout row="2" columns="*, auto" class="outreach-bar">
+                <TextField editable="false" text="Moves" col="0"></TextField>
+                <Image src="res://add" col="1"></Image>
+              </GridLayout>
+
+              <GridLayout row="3" columns="*, auto" class="audit-bar">
+                <TextField editable="false" text="Calendar" col="0"></TextField>
+                <Image src="res://add" col="1"></Image>
+              </GridLayout>
+
+          <ActivityIndicator [busy]="isLoading" [visibility]="isLoading ? 'visible' : 'collapse'" row="1" horizontalAlignment="center" verticalAlignment="center"></ActivityIndicator>
+          </StackLayout>
+        </ScrollView>

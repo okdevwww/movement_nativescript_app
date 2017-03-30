@@ -1,0 +1,9 @@
+<StackLayout>
+  <ActionBar title="About CA">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+  </ActionBar>
+<TextView editable="false" text="Workout Here (repeats)"></TextView>
+<Button text="Next" [nsRouterLink]="['/workout']" pageTransition="slideLeft"></Button>
+<Button text="Leave" [nsRouterLink]="['/workout/leave']" pageTransition="slideLeft"></Button>
+<Button text="Finish Workout" [nsRouterLink]="['/workout/end']" pageTransition="slideLeft"></Button>
+</StackLayout>

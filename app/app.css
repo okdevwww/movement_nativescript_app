@@ -1,0 +1,21 @@
+Page {
+  background-color: white;
+  font-size: 15;
+}
+TextField {
+  padding: 10;
+  font-size: 13;
+}
+
+.small-spacing {
+  margin: 5;
+}
+.medium-spacing {
+  margin: 10;
+}
+
+.header{
+  font-size: 20;
+  text-align: center;
+  font-weight: bold;
+}

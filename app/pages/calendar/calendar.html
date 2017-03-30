@@ -1,0 +1,9 @@
+<StackLayout>
+  <ActionBar title="Calendar">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+  </ActionBar>
+<TextView editable="false" text="Calendar Here"></TextView>
+<TextView editable="false" text="Contents will vary depending on date and if a workout has been completed."></TextView>
+<Button text="Start Workout" [nsRouterLink]="['/workout/start']" pageTransition="slideLeft"></Button>
+<Button text="Workout Settings" [nsRouterLink]="['/workout/settings']" pageTransition="slideLeft"></Button>
+</StackLayout>

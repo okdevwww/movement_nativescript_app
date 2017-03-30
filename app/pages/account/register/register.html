@@ -1,0 +1,11 @@
+<StackLayout>
+  <Image src="res://logo" stretch="aspectFit" horizontalAlignment="center"></Image>
+
+  <TextField hint="Email Address" keyboardType="email" [(ngModel)]="user.email"
+    autocorrect="false" autocapitalizationType="none"></TextField>
+  <TextField hint="Password" secure="true" [(ngModel)]="user.password"></TextField>
+  <TextField hint="Repeat Your Password" secure="true" [(ngModel)]="user.password2"></TextField>
+
+  <Button text="Sign Up" class="submit-button" (tap)="submit()"></Button>
+  <Button text="Back to Login" [nsRouterLink]="['/login']" pageTransition="slideRight"></Button>
+</StackLayout>

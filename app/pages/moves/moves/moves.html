@@ -1,0 +1,10 @@
+<StackLayout>
+  <ActionBar title="Moves">
+    <NavigationButton text="Back" android.systemIcon="ic_menu_back"></NavigationButton>
+  </ActionBar>
+<Button text="Main Quests" [nsRouterLink]="['/moves/category']" pageTransition="slideLeft"></Button>
+<Button text="Mini Quests" [nsRouterLink]="['/moves/category']" pageTransition="slideLeft"></Button>
+<Button text="One Offs Quests" [nsRouterLink]="['/moves/category']" pageTransition="slideLeft"></Button>
+<Button text="Rest" [nsRouterLink]="['/moves/rest/']" pageTransition="slideLeft"></Button>
+<Button text="Manage" [nsRouterLink]="['/moves/manage']" pageTransition="slideLeft"></Button>
+</StackLayout>

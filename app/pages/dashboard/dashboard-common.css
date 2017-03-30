@@ -1,0 +1,55 @@
+.add-bar, .notice-bar, .outreach-bar, .audit-bar, .success-bar{
+  padding: 5 10;
+  height: 100;
+  color: white;
+  margin: 5;
+}
+
+.add-bar {
+  background-color: lightgray;
+  border: 2 solid #215A8B;
+  color: black;
+}
+.notice-bar{
+  background-color: #215A8B;
+}
+.outreach-bar{
+  background-color: lightgray;
+  border: 2 solid #215A8B;
+  color: black;
+}
+.audit-bar{
+  background-color: lightgray;
+  border: 2 solid #215A8B;
+  color: black;
+}
+.success-bar{
+  background-color: lightgray;
+  border: 2 solid #215A8B;
+  color: black;
+}
+.add-bar TextField, .notice-bar TextField, .outreach-bar TextField, .audit-bar TextField, .success-bar TextField{
+  font-size: 17;
+}
+.add-bar Image, .notice-bar Image, .outreach-bar Image, .audit-bar Image, .success-bar Image {
+  height: 15;
+  vertical-align: center;
+  margin-left: 10;
+  margin-right: 5;
+}
+
+ActionBar TextField{
+  font-weight: bold;
+}
+
+ListView {
+  opacity: 0;
+}
+.visible {
+  animation-name: show;
+  animation-duration: 1s;
+}
+@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
