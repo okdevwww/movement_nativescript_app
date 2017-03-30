@@ -1,28 +1,33 @@
-StackLayout {
-  margin-left: 30;
-  margin-right: 30;
-  padding-bottom: 15;
-  background-color: white;
-}
-Image {
-  margin-top: 15;
-  margin-bottom: 20;
-}
-Button, TextField, Label {
-  margin-left: 16;
-  margin-right: 16;
-  margin-bottom: 10;
-}
-.choice-button {
-  background-color: #215A8B;
-  color: white;
-  margin-top: 20;
-  padding-top: 40;
-  padding-bottom: 40;
+TextView{
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25;
+  text-align: center;
 }
 
-TextView{
-  margin-right: 10;
-  margin-left: 10;
-  margin-top: 10;
+.value-container{
+  text-align: center;
+  color: #57bcd4;
+  font-weight: bold;
+}
+
+.value-text{
+  font-size: 70;
+}
+.min-text{
+  font-size: 25;
+}
+
+.btn{
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18;
+   background-color: #57bcd4;
+}
+
+.scale-container{
+  horizontal-align: center;
+  color: #ffffff;
+  font-weight: bold;
 }

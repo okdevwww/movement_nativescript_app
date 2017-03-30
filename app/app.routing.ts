@@ -48,7 +48,8 @@ import { PDFComponent } from "./pages/pdf/pdf.component";
 import { ListComponent } from "./pages/list/list.component";
 
 export const routes = [
-  { path: "", component: IntroComponent},
+  // { path: "", component: IntroComponent},
+  { path: "", redirectTo:"onboarding/length", pathMatch:"full"},
   { path: "login", component: LoginComponent },
   { path: "register", component: RegisterComponent},
   { path: "password", component: PasswordComponent},

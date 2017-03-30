@@ -11,14 +11,23 @@ import * as appSettings from "application-settings";
   styleUrls: ["pages/onboarding/length/length-common.css", "pages/onboarding/length/length.css"],
 })
 export class OnboardingLengthComponent implements OnInit{
-  
+  value:number = 60;  
+  valArray:string[] = ["10","30","50","70","90"];
   ngOnInit() {
     console.log("hello");
     this.page.actionBarHidden = true;
-    this.page.backgroundImage = "res://bg_login";
+    // this.page.backgroundImage = "~/images/BACK.png";
+  }
+  
+  constructor(private router: RouterExtensions, private page: Page) {
   }
 
-  constructor(private router: RouterExtensions, private page: Page) {
+  onChange(val){
+    this.value = parseInt(val);
+  }
+
+  onBtnClick(){
+    console.log("value = " + this.value);
   }
 
 }
